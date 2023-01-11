@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -17,29 +17,86 @@
             <nav class="nav-section">
                 <a class="logo" href="./index.html">Web<span class="logo-studio-up">Studio</span></a>
                 <ul class="nav-list">
-                    <li class="nav-list-item"><a class="nav-list-item-link current underline-studio" href="./index.html">Studio</a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link" href="#">Contacts</a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-mobile-link current underline-studio" href="./index.html">Studio</a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-mobile-link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav-list-item"><a class="nav-list-item-mobile-link" href="#">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="icon-burger-btn">
+                <svg class="icon-burger">
+                    <use href="./images/svg/sprite-svg.svg#icon-burger"></use>
+                </svg>
+            </button>
             <!-- contacts -->
-                <ul class="contact-list">
-                    <li class="contact-item"><a class="contact-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact-item"><a class="contact-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <ul class="contact-list">
+                <li class="contact-item"><a class="contact-item-mobile-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="contact-item"><a class="contact-item-mobile-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            </ul>
+        </div>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close-btn">
+                    <svg class="mobile-menu-close-icon">
+                        <use href="./images/svg/sprite-svg.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="nav-list-mobile">
+                    <li class="nav-list-item-mobile"><a class="nav-list-item-mobile-link" href="./index.html">Studio</a></li>
+                    <li class="nav-list-item-mobile"><a class="nav-list-item-mobile-link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="nav-list-item-mobile"><a class="nav-list-item-mobile-link" href="#">Contacts</a></li>
                 </ul>
+                <ul class="contact-list-mobile">
+                    <li class="contact-item-mobile"><a class="contact-item-mobile-phone-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="contact-item-mobile"><a class="contact-item-mobile-email-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <div class="soc-media-div">
+                    <ul class="soc-media-list">
+                        <li class="soc-media-list-item-mobile">
+                            <a href="#" class="social-list-link-mobile">
+                                <svg class="social-icon-mobile" width="24px" height="24px">
+                                    <use href="./images/svg/sprite-svg.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-media-list-item-mobile">
+                            <a href="#" class="social-list-link-mobile">
+                                <svg class="social-icon-mobile" width="24px" height="24px">
+                                    <use href="./images/svg/sprite-svg.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-media-list-item-mobile">
+                            <a href="#" class="social-list-link-mobile">
+                                <svg class="social-icon-mobile" width="24px" height="24px">
+                                    <use href="./images/svg/sprite-svg.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc-media-list-item-mobile">
+                            <a href="#" class="social-list-link-mobile">
+                                <svg class="social-icon-mobile" width="24px" height="24px">
+                                    <use href="./images/svg/sprite-svg.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
         </div>
     </header>
 <!-- MAIN PART -->
     <main>
         <!-- "hero" section -->
-        <section class="hero-section background">
+        <!-- <section class="hero-section background">
             <div class="container hero-section-div">
                 <h1 class="hero-section-title">Effective Solutions<br>for Your Business</h1>
                 <button class="hero-button" data-modal-open>Order Service</button>
             </div>
-        </section>
+        </section> -->
         <!-- principles section -->
-        <section class="principles">
+        <!-- <section class="principles">
             <div class="container principles-div">
                 <h2 class="principles-section-title" hidden>Our principles</h2>
                 <ul class="principles-section-list">
@@ -81,9 +138,9 @@
                     </li>
                 </ul>
             </div>         
-        </section>
+        </section> -->
         <!-- "what are we doing" section  -->
-        <section class="what-we-are-doing">
+        <!-- <section class="what-we-are-doing">
             <div class="container what-we-are-doing-div">
                 <h2 class="what-we-are-doing-header">What Are We Doing</h2>
                 <ul class="what-we-are-doing-list">
@@ -92,9 +149,9 @@
                     <li class="img-doing-item"><img src="images/what_are_we_doing/img-2.jpg" alt="img3"></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- "our team" section -->
-        <section class="our-team">
+        <!-- <section class="our-team">
             <div class="container our-team-div">
                 <h2 class="our-team-header">Our Team</h2>
                 <ul  class="our-team-list">
@@ -248,9 +305,9 @@
                     </li>
                 </ul>
             </div>           
-        </section>
+        </section> -->
         <!-- customer's section -->
-        <section class="customers-section">
+        <!-- <section class="customers-section">
             <div class="container customers-div">
                 <h2 class="customers-header">Customers</h2>
                 <ul class="customers-list">
@@ -301,11 +358,11 @@
 
             </div>
 
-        </section>
+        </section> -->
     </main>
 <!-- FOOTER -->
 <footer class="footer">
-    <div class="container footer-div">
+    <!-- <div class="container footer-div">
         <div class="text-and-logo-div">
             <a class="logo" href="./index.html"><span class="logo-web">Web</span><span class="logo-studio-down">Studio</span></a>
             <p class="footer-text">
@@ -346,9 +403,9 @@
                     </a>
                 </li>
             </ul>      
-        </div>
+        </div> -->
                                      <!-- SUBSCRIBE -->
-        <form class="subscribe-div">
+        <!-- <form class="subscribe-div">
             <label class="subscribe-label">
                 <p class="subscribe-form-input-desc">Subscribe</p>
                 <input 
@@ -365,7 +422,7 @@
                 </svg>
             </button>
         </form>
-    </div>
+    </div> -->
 </footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal-window">
