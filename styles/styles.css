@@ -36,40 +36,40 @@ img{
 button{
     cursor:pointer;
 }
-.container {
+/* .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
+} */
 
 
 
 /* ДЛЯ МОБІЛЬНИХ */
 .container {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-@media screen and (min-width: 480px) {
-    .container {
-    width: 428px;
+    min-width: 320px;
+    max-width: 448px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 16px;
-    padding-right: 16px; */
+}
+@media screen and (min-width: 428px) {
+    .container {
+    width: 428px;
 }
 }
 /* ДЛЯ ПЛАНШЕТІВ */
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;
+    width: 768px;
     }
 }
 /* ДЛЯ ДЕСКТОПІВ */
 @media screen and (min-width: 1200px) {
     .container {
-        width: 1200px;
+        width: 1158px;
     }
 }
 .icon-burger{
@@ -77,14 +77,36 @@ button{
     height: 22px;
     fill: var(--shadow-headings-color);
 }
-@media screen and (max-width: 768px){
+
+---------------------------------------/* MOBILE FIRST */-------------------------------------
+/* @media screen and (max-width: 768px) { */
+.logo, .nav-list-item-link, .contact-item-link {
+    text-decoration: none;
+}
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand-color);
+    margin-right: 77px;
+    text-decoration: none;
+    margin-right: 77px;
+    }
+.logo-studio-up {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--shadow-headings-color);
+}
 .nav-list, .contact-list{
     display: none;
 }
-}
-
-/* MOBILE FIRST */
-.page-header-container{
+.page-header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,56 +114,76 @@ button{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.icon-burger-btn{
+
+.icon-burger-btn {
     background-color: transparent;
     border: none;
     padding: 0;
     line-height: 0px;
 }
-.mobile-menu{
-    position:fixed;
+
+.mobile-menu {
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: var(--light-background-color);
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1000;
+
+    transform: opacity 250ms var(--transition-dur-and-func),
+        visibility 250ms var(--transition-dur-and-func);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
-.mobile-menu-close-btn{
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-menu-close-btn {
     background-color: var(--accent-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
     padding: 0;
     border-radius: 50%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     position: absolute;
     top: 40px;
     right: 15px;
-    
+
     transition: fill 250ms var(--transition-dur-and-func),
-    background-color 250ms var(--transition-dur-and-func);
+        background-color 250ms var(--transition-dur-and-func);
 }
-.mobile-menu-close-icon{
+
+.mobile-menu-close-icon {
     width: 8px;
     height: 8px;
 }
+
 .mobile-menu-close-btn:hover,
 .mobile-menu-close-btn:focus {
     fill: var(--light-background-color);
     background-color: var(--hero-button-click);
 }
-.mobile-menu-container{
+
+.mobile-menu-container {
     position: relative;
     padding-top: 80px;
     padding-left: 40px;
     padding-bottom: 40px;
 }
-.nav-list-mobile{
+
+.nav-list-mobile {
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 284px;
@@ -149,49 +191,57 @@ button{
     padding-inline-start: 0;
     list-style-type: none;
 }
-.nav-list-item-mobile:not(:last-child){
+
+.nav-list-item-mobile:not(:last-child) {
     margin-bottom: 40px;
 }
 
-.nav-list-item-mobile-link{
+.nav-list-item-mobile-link {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--shadow-headings-color);
     text-decoration: none;
-    
+
     transition: color 250ms var(--transition-dur-and-func);
 }
+
 .nav-list-item-mobile-link:hover,
 .nav-list-item-mobile-link:active,
 .nav-list-item-mobile-link:focus,
 .contact-item-mobile-phone-link:hover,
 .contact-item--mobile-phone-link:visited,
 .contact-item-mobile-email-link:hover,
-.contact-item--mobile-email-link:visited{
+.contact-item--mobile-email-link:visited {
     color: var(--primary-brand-color);
 }
-.contact-item-mobile-phone-link{
+
+.contact-item-mobile-phone-link {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
     text-decoration: none;
     letter-spacing: 0.02em;
-    color:var(--body-text-color);
+    color: var(--body-text-color);
 
     transition: color 250ms var(--transition-dur-and-func);
 }
-.contact-item-mobile{
+
+.contact-item-mobile {
     transition: color 250ms var(--transition-dur-and-func);
 }
-.contact-item-mobile:not(:last-child){
+
+.contact-item-mobile:not(:last-child) {
     margin-bottom: 40px;
 }
-.contact-item-mobile:hover, .contact-item-mobile:focus {
+
+.contact-item-mobile:hover,
+.contact-item-mobile:focus {
     color: var(--primary-brand-color);
 }
-.contact-item-mobile-email-link{
+
+.contact-item-mobile-email-link {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -201,7 +251,8 @@ button{
 
     transition: color 250ms var(--transition-dur-and-func);
 }
-.social-list-link-mobile{
+
+.social-list-link-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,15 +262,32 @@ button{
     background: var(--primary-brand-color);
 }
 
-.social-icon-mobile{
+.social-icon-mobile {
     fill: var(--light-background-color);
 }
-.soc-media-list{
+
+.soc-media-list {
     margin-top: 48px;
 }
-.soc-media-list-item-mobile:not(:last-child){
+
+.soc-media-list-item-mobile:not(:last-child) {
     margin-right: 56px;
 }
+
+
+/* TABLET */
+
+/* @media screen and (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+    }
+    .icon-burger-btn{
+        display: none;
+    }
+} */
+
+
+
 
 
 

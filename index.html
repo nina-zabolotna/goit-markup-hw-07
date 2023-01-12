@@ -22,7 +22,7 @@
                     <li class="nav-list-item"><a class="nav-list-item-mobile-link" href="#">Contacts</a></li>
                 </ul>
             </nav>
-            <button type="button" class="icon-burger-btn">
+            <button type="button" class="icon-burger-btn js-open-menu" >
                 <svg class="icon-burger">
                     <use href="./images/svg/sprite-svg.svg#icon-burger"></use>
                 </svg>
@@ -34,9 +34,9 @@
             </ul>
         </div>
         <!-- MOBILE MENU -->
-        <div class="mobile-menu">
-            <div class="container mobile-menu-container">
-                <button class="mobile-menu-close-btn">
+        <div class="mobile-menu js-menu-container" >
+            <div class="container mobile-menu-container js-close-menu">
+                <button type="button" class="mobile-menu-close-btn" >
                     <svg class="mobile-menu-close-icon">
                         <use href="./images/svg/sprite-svg.svg#icon-close"></use>
                     </svg>
@@ -473,6 +473,7 @@
         </form>
     </div>
 </div>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
