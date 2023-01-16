@@ -48,10 +48,9 @@ button{
 
 /* ДЛЯ МОБІЛЬНИХ */
 .container {
-    min-width: 320px;
-    /* max-width: 448px; */
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -64,6 +63,10 @@ button{
 @media screen and (min-width: 768px) {
     .container {
     width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;6
     }
 }
 /* ДЛЯ ДЕСКТОПІВ */
@@ -295,7 +298,7 @@ button{
      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/mobile/hero-mobile@1x.jpg");
      background-repeat: no-repeat;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
  }  
 
 @media screen and (min-device-pixel-ration:2) and (max-width: 767px),
@@ -348,11 +351,23 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     transition: box-shadow 250ms var(--transition-dur-and-func), background-color 250ms var(--transition-dur-and-func);
 }
 .hero-section {
-    height: 432px;
-    text-align: center;
+    /* height: 432px;
+    text-align: center; */
+    /* padding-top: 112px;
+    padding-bottom: 112px; */
+
+    /* width: 428px;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.hero-section-div{
     padding-top: 112px;
     padding-bottom: 112px;
+    text-align: center;
 }
+
+
 /* OUR PRINCIPLES */
 
 .principles-section-list-item-header {
@@ -996,6 +1011,155 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/tablet/hero-tablet@2x.jpg");
     }
 }
+
+/* HEADER */
+
+.logo,
+.nav-list-item-link,
+.contact-item-link {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand-color);
+    margin-right: 77px;
+    text-decoration: none;
+    margin-right: 77px;
+}
+
+.logo-studio-up {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--shadow-headings-color);
+}
+
+.nav-list-item-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+
+    position: relative;
+
+    transition: color 250ms var(--transition-dur-and-func);
+}
+
+.contact-item-link {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--body-text-color);
+    text-decoration: none;
+
+    transition: color 250ms var(--transition-dur-and-func);
+}
+
+.nav-list,
+.contact-list,
+.button-filters-list,
+.gallery-list,
+.principles-section-list,
+.what-we-are-doing-list,
+.our-team-list {
+    list-style: none;
+}
+
+.nav-list-item-link:hover,
+.nav-list-item-link:active,
+.nav-list-item-link:focus,
+.contact-item-link:hover,
+.contact-item-link:visited {
+    color: var(--primary-brand-color);
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-box {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.nav-section,
+.nav-list,
+.contact-list {
+    display: flex;
+    align-items: center;
+}
+
+.contact-list {
+    margin-left: auto;
+}
+
+.nav-list-item:not(:last-child),
+.contact-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-list-item-link,
+.contact-item-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.current {
+    color: var(--primary-brand-color);
+}
+
+.underline-portfolio::after {
+    content: '';
+    display: block;
+    width: 66px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-brand-color);
+
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+.underline-studio::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-brand-color);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
