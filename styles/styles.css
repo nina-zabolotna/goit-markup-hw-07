@@ -1095,7 +1095,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 .contact-list {
     margin-left: auto;
     padding-top: 24px;
-    padding-bottom: 10px;
+    padding-bottom: 9px;
 }
 .nav-list-item:not(:last-child) {
     margin-right: 40px;
