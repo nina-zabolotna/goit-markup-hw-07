@@ -54,7 +54,7 @@ button{
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 428px) and (max-width: 767px) {
     .container {
     width: 428px;
 }
@@ -85,7 +85,7 @@ button{
 
 /* MOBILE FIRST */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 /* HEADER */
 .logo,
@@ -119,6 +119,7 @@ button{
 .nav-list,
 .contact-list {
     display: none;
+
 }
 
 .page-header-container {
@@ -753,6 +754,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     border-radius: 4px;
 
     padding: 72px 16px 24px 16px;
+    overflow-y: scroll;
 }
 
 .modal-window-close-icon {
@@ -1001,7 +1003,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/tablet/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 @media screen and (min-device-pixel-ration:2) and (min-width: 768px),
@@ -1043,8 +1045,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 
 .nav-list-item-link {
-    /* font-family: 'Roboto';
-    font-style: normal; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -1202,23 +1202,154 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     transition: box-shadow 250ms var(--transition-dur-and-func), background-color 250ms var(--transition-dur-and-func);
 }
 
-.hero-section {
-    /* height: 432px;
-    text-align: center; */
-    /* padding-top: 112px;
-    padding-bottom: 112px; */
-
-    /* width: 428px;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
 .hero-section-div {
     padding-top: 112px;
     padding-bottom: 96px;
     text-align: center;
 }
 
+/* OUR PRINCIPLES */
+
+.principles-section-list-item-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+}
+
+.principles-section-list-item-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+    margin: 0;
+}
+
+.principle-icon-div{
+    visibility: hidden;
+    position: absolute;
+}
+
+.principles-section-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principles-section-list-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.principles-section-list-item:nth-child(2n+1) {
+    margin-right: 24px;
+    margin-bottom: 72px;
+}
+
+.principles {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.principles-section-list-item-header {
+    margin: 8px 0px;
+}
+
+/* WHAT WE ARE DOING */
+
+.what-we-are-doing {
+    visibility: hidden;
+    position: absolute;
+}
+
+/* OUR TEAM */
+.our-team-header,
+.customers-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.our-team-list-item-header{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--shadow-headings-color);
+    text-align: center;
+}
+.our-team-list-item-text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+.our-team{
+    background-color: var(--light-mode-color);
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+.our-team-list-item{
+    background-color: var(--light-background-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.our-team-list-item{
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 64px;
+}
+
+.our-team-list-item:nth-child(2n+1) {
+    margin-right: 24px;
+}
+
+.our-team-list-item-header-and-text{
+    padding: 32px 16px;
+}
+
+.our-team-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+}
+.our-team-list-item-text{
+    margin-top: 8px;
+    text-align: center;
+}
+.social-media-list{
+    margin-top: 8px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.social-list-link{
+   text-decoration:none;
+   
+}
+.social-media-list-item:not(:last-child){
+    margin-right: 24px;
+}
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+}
+.social-icon{
+    fill: var(--light-mode-color);
+} 
+
+
+
+/* УБРАТЬ МАРЖИНИ НА ДВУХ ПОСЛЕДНИХ ДЕТЯХ ПРИНЦИПОВ И КОМАНДЫ */
 
 
 
@@ -1228,9 +1359,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 
 
-
-
-/* ПРОВЕРИТЬ ШРИФТЫ В ХЕДЕРЕ */
 
 
 
@@ -1263,7 +1391,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/tablet/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 
