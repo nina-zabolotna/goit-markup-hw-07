@@ -308,7 +308,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--light-background-color);
-    margin-bottom: ;
+    margin-bottom: 72px;
+    margin-top: 0;
 
 }
 .hero-section-div {
@@ -368,15 +369,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
+    margin: 0;
 }
-
-/* .principles-section-list {
-    display: flex;
-} */
-
-/* .principles-section-list-item {
-    width: calc((100% - 24px * 3) / 4);
-} */
 
 .principles-section-list-item:not(:last-child) {
     margin-bottom: 72px;
@@ -388,7 +382,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .principles-section-list-item-header {
-    margin: 8px 0px;
+    margin-bottom: 8px;
+    margin-top: 0;
 }
 
 .principle-icon-div {
@@ -624,6 +619,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     letter-spacing: 0.02em;
     color: var(--light-background-color);
     margin-bottom: 16px;
+    margin-top:0;
 }
 
 .soc-media-list-item:not(:last-child) {
@@ -661,6 +657,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: var(--light-background-color);
     margin-bottom: 16px;
     text-align: center;
+    margin-top:0;
 }
 
 .subscribe-form-input {
@@ -1193,7 +1190,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     
     .hero-section-div {
         padding-top: 112px;
-        padding-bottom: 96px;
+        padding-bottom: 108px;
          text-align: center;
     }
     
@@ -1245,7 +1242,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
     
     .principles-section-list-item-header {
-        margin: 8px 0px;
+        margin-bottom: 8px;
+        margin-top: 0;
     }
     
         /* WHAT WE ARE DOING */
@@ -1529,6 +1527,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         color: var(--light-background-color);
         margin-bottom: 16px;
         text-align: left;
+        margin-top:0;
     }
     
     .subscribe-form-input {
@@ -2016,12 +2015,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     letter-spacing: 0.02em;
     color: var(--light-background-color);
     margin-bottom: 48px;
+    margin-top: 0;
 }
 .hero-section{
     height: 603px;
     text-align: center;
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 188px;
+    padding-bottom: 188px;
  }
 .hero-section-div{
     display: flex;
@@ -2043,6 +2043,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
+    margin: 0;
 }
 .principles-section-list{
     display: flex;
@@ -2077,6 +2078,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color: var(--shadow-headings-color);
     margin-bottom: 72px;
     text-align: center;
+    margin-top:0;
 }
 .what-we-are-doing{
     padding-bottom: 120px;
@@ -2359,6 +2361,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     letter-spacing: 0.02em;
     color: var(--light-background-color);
     margin-bottom: 16px;
+    margin-top:0;
 }
 .soc-media-list-item:not(:last-child){
     margin-right: 16px;
@@ -2630,6 +2633,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     letter-spacing: 0.02em;
     color: var(--light-background-color);
     margin-bottom: 16px;
+    margin-top:0;
 }
 
 .subscribe-form-input {
