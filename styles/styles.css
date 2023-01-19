@@ -2627,6 +2627,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color: var(--shadow-headings-color);
 
     margin-bottom: 16px;
+    margin-top: 0;
 }
 
 .soc-media-div {
