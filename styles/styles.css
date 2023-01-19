@@ -36,15 +36,6 @@ img{
 button{
     cursor:pointer;
 }
-/* .container {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-} */
-
-
 
 /* ДЛЯ МОБІЛЬНИХ */
 .container {
@@ -2043,16 +2034,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     padding-top: 192px;
     padding-bottom: 192px;
  }
- /* .background{
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
-    max-width: 1440px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/hero/hero.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
- } */
 .hero-section-div{
     display: flex;
     flex-direction: column;
