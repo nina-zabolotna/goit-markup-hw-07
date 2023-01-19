@@ -2134,11 +2134,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 .our-team-list-item{
     width: calc((100% - 24px * 3) / 4);
 }
-
 .our-team-list-item-header-and-text{
     padding: 32px 16px;
 }
-
 .our-team-list-item:not(:last-child){
     margin-right: 24px;
 }
