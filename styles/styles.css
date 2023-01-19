@@ -344,17 +344,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: var(--light-background-color);
     transition: box-shadow 250ms var(--transition-dur-and-func), background-color 250ms var(--transition-dur-and-func);
 }
-.hero-section {
-    /* height: 432px;
-    text-align: center; */
-    /* padding-top: 112px;
-    padding-bottom: 112px; */
-
-    /* width: 428px;
-    margin-left: auto;
-    margin-right: auto; */
-}
-
 .hero-section-div{
     padding-top: 112px;
     padding-bottom: 112px;
@@ -2413,7 +2402,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 .modal-window{
     width: 408px;
-    height: 576px;
+    height: 586px;
     background-color: var(--modal-window-bg);
     
     position: absolute;
