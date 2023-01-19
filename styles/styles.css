@@ -1848,7 +1848,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
     height: 600px;
-    max-width: 1440px;
+    width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/hero/desktop/hero-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
