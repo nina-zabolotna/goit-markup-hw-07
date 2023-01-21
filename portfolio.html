@@ -27,7 +27,68 @@
                 <li class="contact-item"><a class="contact-item-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="contact-item"><a class="contact-item-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
+            <button type="button" class="icon-burger-btn js-open-menu">
+                <svg class="icon-burger">
+                    <use href="./images/svg/sprite-svg.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
+            <!-- MOBILE MENU -->
+            <div class="mobile-menu js-menu-container">
+                <div class="mobile-menu-container js-close-menu">
+                    <button type="button" class="mobile-menu-close-btn">
+                        <svg class="mobile-menu-close-icon">
+                            <use href="./images/svg/sprite-svg.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <ul class="nav-list-mobile">
+                        <li class="nav-list-item-mobile"><a class="nav-list-item-mobile-link  current underline-studio"
+                                href="./index.html">Studio</a></li>
+                        <li class="nav-list-item-mobile"><a class="nav-list-item-mobile-link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-list-item-mobile"><a class="nav-list-item-mobile-link" href="#">Contacts</a></li>
+                    </ul>
+                    <ul class="contact-list-mobile">
+                        <li class="contact-item-mobile"><a class="contact-item-mobile-phone-link" href="tel:+110001111111">+11 (000)
+                                111-11-11</a></li>
+                        <li class="contact-item-mobile"><a class="contact-item-mobile-email-link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <div class="soc-media-div-mobile-menu">
+                        <ul class="soc-media-list">
+                            <li class="soc-media-list-item-mobile">
+                                <a href="#" class="social-list-link-mobile">
+                                    <svg class="social-icon-mobile" width="24px" height="24px">
+                                        <use href="./images/svg/sprite-svg.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-media-list-item-mobile">
+                                <a href="#" class="social-list-link-mobile">
+                                    <svg class="social-icon-mobile" width="24px" height="24px">
+                                        <use href="./images/svg/sprite-svg.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-media-list-item-mobile">
+                                <a href="#" class="social-list-link-mobile">
+                                    <svg class="social-icon-mobile" width="24px" height="24px">
+                                        <use href="./images/svg/sprite-svg.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="soc-media-list-item-mobile">
+                                <a href="#" class="social-list-link-mobile">
+                                    <svg class="social-icon-mobile" width="24px" height="24px">
+                                        <use href="./images/svg/sprite-svg.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
     </header>
 
     <main>
@@ -273,6 +334,7 @@
         </form>
     </div>     
 </footer>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
