@@ -41,13 +41,19 @@ button {
 
 /* ДЛЯ МОБІЛЬНИХ */
 .container {
-  max-width: 428px;
+  /* max-width: 428px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 428px) and (max-width: 767px) {
+
+/* @media screen and (min-width: 428px) and (max-width: 768px) {
+  .container {
+    max-width: 428px;
+  } */
+
+@media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
   }
@@ -76,7 +82,7 @@ button {
 
 /* MOBILE FIRST */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /* HEADER */
   .logo,
   .nav-list-item-link,
@@ -118,6 +124,9 @@ button {
 
     padding-top: 24px;
     padding-bottom: 24px;
+    max-width: 768px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
   }
 
   .icon-burger-btn {
@@ -285,8 +294,8 @@ button {
   .background {
     margin-left: auto;
     margin-right: auto;
-    height: 432px;
-    max-width: 428px;
+    /* height: 432px; */
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -322,6 +331,10 @@ button {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+
+    padding-top: 112px;
+    padding-bottom: 112px;
+    text-align: center;
   }
 
   .hero-button:hover,
@@ -352,11 +365,11 @@ button {
     transition: box-shadow 250ms var(--transition-dur-and-func),
       background-color 250ms var(--transition-dur-and-func);
   }
-  .hero-section-div {
+  /* .hero-section-div {
     padding-top: 112px;
     padding-bottom: 112px;
     text-align: center;
-  }
+  } */
 
   /* OUR PRINCIPLES */
 
@@ -957,18 +970,24 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mobile-menu {
-    display: none;
+    visibility: hidden;
+    position: absolute;
   }
 
   .icon-burger-btn {
-    display: none;
+    visibility: hidden;
+    position: absolute;
+
+  }
+
+  .contact-list {
+    visibility: visible;
   }
 
   .background {
     margin-left: auto;
     margin-right: auto;
-    height: 436px;
-    max-width: 768px;
+    max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -998,7 +1017,16 @@ button {
   .contact-item-link {
     text-decoration: none;
   }
+  .container{
+    position: relative;
+  }
+  .nav-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
+    transform: translate(-50%, -50%);
+  }
   .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -1065,13 +1093,7 @@ button {
     position: relative;
   }
 
-  .nav-list {
-    position: absolute;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  
   .header-box {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
